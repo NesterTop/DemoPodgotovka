@@ -37,6 +37,15 @@ namespace DemoPodgotovka
             }
         }
 
+        public DataTable ExecuteSql(string sql)
+        {
+            DataTable dt = new DataTable();
+            SqlCommand command = new SqlCommand(sql, _connection);
+            var reader = command.ExecuteReader();
+            dt.Load(reader);
+            return dt;
+        }
+
         public void Dispose()
         {
             CloseConnection();
