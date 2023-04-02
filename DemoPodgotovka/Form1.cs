@@ -22,7 +22,7 @@ namespace DemoPodgotovka
         {
             using(DataBase db = new DataBase())
             {
-               dataGridView1.DataSource =  db.ExecuteSql("select * from TipRashoda");
+               dataGridView1.DataSource =  db.ExecuteSql("select * from Users");
             }
         }
 

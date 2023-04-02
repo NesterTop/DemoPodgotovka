@@ -10,7 +10,7 @@ namespace DemoPodgotovka
 {
     public class DataBase : IDisposable
     {
-        private string _dataSource = @"Data Source=DESKTOP-AVGELME\STP;Initial Catalog=DataBase;Integrated Security=True";
+        private string _dataSource = @"Data Source=DESKTOP-AVGELME\STP;Initial Catalog=trade;Integrated Security=True";
         private SqlConnection _connection;
         public bool IsConnected { get; private set; }
 
